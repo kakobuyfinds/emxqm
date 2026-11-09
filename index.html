@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>VigorBuy spreadsheet | Categorias, tamanhos e fotos de QC</title>
+  <meta name="description" content="Explore dez categorias no guia VigorBuy spreadsheet. Saiba como confirmar medidas, interpretar fotos de QC e estimar o custo de uma encomenda.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VigorBuy spreadsheet | Categorias, tamanhos e fotos de QC">
+  <meta property="og:description" content="Um guia em português para navegar por categorias, comparar medidas e avaliar fotos antes de encomendar.">
+  <meta name="theme-color" content="#26182e">
+  <link rel="preconnect" href="https://static.nike.com">
+  <!--
+    Pesquisa editorial: o Bing não apresentou resultados pertinentes nas consultas
+    verificadas. A análise alternativa de títulos e temas usou dez sites:
+    rep.tools, vigorbuylists.com, spreadsheet-vigorbuy.com, vigorbuywithqc.com,
+    vigorbuys.com, vigorbuyspreadsheet.site, vigorbuyspreadhseet.com,
+    vigorspreadsheet.com, vigorbuy.world e vigorbuy.makeup.
+    Termos secundários: guia VigorBuy em português; links de produtos VigorBuy;
+    fotos de QC VigorBuy; tamanhos e medidas VigorBuy; envio internacional VigorBuy.
+    Consultas de cauda longa sugeridas:
+    como usar a VigorBuy spreadsheet; como verificar um link de produto;
+    como comparar modelos de ténis; como confirmar a variante do anúncio;
+    como medir a palmilha em centímetros; diferença entre palmilha e sola;
+    como interpretar uma tabela de tamanhos; como medir o peito de uma camisola;
+    como medir a cintura de calças; como comparar o comprimento das mangas;
+    o que são fotos de QC; que fotos pedir para um par de ténis;
+    como verificar a simetria do calçado; como conferir costuras e fechos;
+    como comparar fotos com o anúncio; como avaliar a cor sob luz neutra;
+    como identificar a fivela de um boné; como conferir a largura de uma pulseira;
+    como verificar as dimensões de uma mala; como estimar o custo total de compra;
+    diferença entre peso real e volumétrico; como comparar opções de transporte;
+    como verificar o prazo de devolução; como organizar uma lista de produtos;
+    como escolher um tamanho pela medida da peça.
+  -->
+  <style>
+    :root{color-scheme:light;--ink:#26182e;--paper:#f8f4ed;--soft:#e9dfeb;--line:#cdbfcf;--accent:#f0e77a;--muted:#584963}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:inherit}
+    :focus-visible{outline:3px solid #a848ba;outline-offset:4px}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.1}
+    h2{font-size:clamp(1.65rem,4vw,2.45rem);letter-spacing:-.035em}
+    h3{font-size:1.24rem}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(69rem,calc(100% - 2rem));margin-inline:auto}
+    .mast,.hero{background:var(--ink);color:#fff9ff}
+    .mast .wrap,.foot .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:.85rem}
+    .mast .wrap{border-bottom:1px solid #6e5976}
+    .brand{font-weight:800;text-decoration:none}
+    .mast-note,.tag{font-size:.75rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+    .mast-note{color:#e0cced}
+    .hero .wrap{display:grid;grid-template-columns:1.45fr 1fr;gap:clamp(1rem,5vw,3.5rem);align-items:center;padding-block:clamp(1.8rem,6vw,4rem)}
+    .tag{color:var(--muted);margin-bottom:.65rem}
+    .hero .tag{color:var(--accent)}
+    h1{max-width:11ch;font-size:clamp(2.55rem,7vw,5.2rem);letter-spacing:-.06em;overflow-wrap:anywhere}
+    .lead{max-width:49ch;margin-block:1rem 1.3rem;color:#f0e3f2;font-size:1.07rem}
+    .button{display:inline-block;padding:.65rem 1rem;background:var(--accent);color:var(--ink);font-weight:800;text-decoration:none;border-radius:.2rem}
+    .hero figure{overflow:hidden;background:#ede8e8;color:var(--ink);border-radius:.35rem}
+    .hero img{aspect-ratio:5/3;object-fit:contain}
+    figcaption{padding:.6rem .75rem;font-size:.83rem;font-weight:650}
+    section{padding-block:clamp(1.75rem,5vw,3.2rem);border-bottom:1px solid var(--line)}
+    .intro{max-width:68ch;margin-top:.65rem;color:var(--muted)}
+    .categories{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.55rem;padding:0;margin:1.1rem 0 0}
+    .categories a{height:100%;min-height:3.35rem;display:flex;align-items:center;gap:.5rem;padding:.65rem;background:var(--soft);text-decoration:none;font-weight:750;border-radius:.2rem}
+    .categories a::after{content:"↗";margin-inline-start:auto;font-size:.85em}
+    .categories a:hover,.button:hover{background:#ded16a;color:var(--ink)}
+    .stories,.gallery{display:grid;gap:1rem;margin-top:1.15rem}
+    .stories{grid-template-columns:repeat(3,minmax(0,1fr))}
+    article{padding:1.15rem;border:1px solid var(--line);border-radius:.35rem;background:#fffaf5}
+    article p+p,article h3+p{margin-top:.65rem}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery figure{background:#fff;border:1px solid var(--line);border-radius:.35rem;overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#f6f4f3}
+    .faq{max-width:49rem;margin-top:1rem}
+    details{border-bottom:1px solid var(--line);padding:.75rem 0}
+    details:last-child{border:0}
+    summary{cursor:pointer;font-weight:800}
+    details p{margin-top:.45rem}
+    .foot{background:var(--ink);color:#fff9ff;font-size:.9rem}
+    @media(max-width:53rem){.categories{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:44rem){.hero .wrap,.stories{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.hero figure{max-width:26rem}}
+    @media(max-width:34rem){.categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "inLanguage":"pt",
+    "name":"VigorBuy spreadsheet | Categorias, tamanhos e fotos de QC",
+    "mainEntity":[
+      {"@type":"Question","name":"O que é uma VigorBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"É uma lista de referências usada para organizar links de produtos, variantes, medidas e, quando disponíveis, fotos de controlo de qualidade. Este guia editorial encaminha as categorias para a HipoBuyFind."}},
+      {"@type":"Question","name":"Que fotos de QC devo pedir para um par de ténis?","acceptedAnswer":{"@type":"Answer","text":"Peça fotos dos dois pés juntos, do perfil, do calcanhar, da sola e da etiqueta. Para confirmar o ajuste, peça também a medida da palmilha em centímetros."}},
+      {"@type":"Question","name":"As fotos de QC comprovam a autenticidade?","acceptedAnswer":{"@type":"Answer","text":"Não. As fotos ajudam a avaliar o estado visível e a verificar a variante. Se a autenticidade for decisiva, procure um vendedor autorizado ou um serviço de autenticação independente."}},
+      {"@type":"Question","name":"Como estimo o custo total de uma encomenda?","acceptedAnswer":{"@type":"Answer","text":"Some o valor do artigo, o transporte interno e internacional, as taxas do serviço e os encargos aplicáveis no destino. Confirme a moeda, o peso usado no cálculo e as condições de devolução antes de pagar."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/emxqm/">
+</head>
+<body>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <span class="mast-note">Guia editorial independente</span>
+    </div>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <p class="tag">Do anúncio à encomenda</p>
+          <h1>VigorBuy spreadsheet</h1>
+          <p class="lead">Uma spreadsheet reúne links e referências para comparar artigos. Comece pela categoria, confirme as medidas e use as fotos de controlo de qualidade (QC) para verificar a variante antes de decidir.</p>
+          <a class="button" href="https://www.hipobuyfind.com">Abrir a HipoBuyFind</a>
+        </div>
+        <figure>
+          <img src="https://static.nike.com/a/images/t_default,w_480,f_webp,q_80/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR+FORCE+1+%2707.webp" width="480" height="600" fetchpriority="high" alt="Ténis Nike Air Force 1 ’07 branco">
+          <figcaption>Nike Air Force 1 ’07 · Referência visual</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section aria-labelledby="categorias">
+        <p class="tag">01 / Índice</p>
+        <h2 id="categorias">Navegar por categoria</h2>
+        <p class="intro">Os atalhos abrem as respetivas categorias na HipoBuyFind.</p>
+        <nav aria-label="Categorias da HipoBuyFind">
+          <ul class="categories">
+            <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Calçado</a></li>
+            <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Camisolas e malhas</a></li>
+            <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+            <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Casacos</a></li>
+            <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Calças e calções</a></li>
+            <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Bonés e chapéus</a></li>
+            <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos</a></li>
+            <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Roupa interior</a></li>
+            <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisolas desportivas</a></li>
+            <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Acessórios</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section aria-labelledby="guias">
+        <p class="tag">02 / Guias de compra</p>
+        <h2 id="guias">O que verificar antes de encomendar</h2>
+        <div class="stories">
+          <article>
+            <h3>Compare medidas, não só etiquetas</h3>
+            <p>Meça uma peça que lhe assente bem e use o mesmo método da tabela do anúncio. Numa T-shirt, compare a largura de axila a axila. Num casaco, confirme também os ombros e o comprimento da manga.</p>
+            <p>Para o calçado, compare a palmilha em centímetros. A medida exterior da sola corresponde a outra parte do sapato.</p>
+          </article>
+          <article>
+            <h3>Leia as fotos de QC por ângulo</h3>
+            <p>Confirme primeiro a etiqueta, a cor e a variante do anúncio. No calçado, veja os dois pés lado a lado para comparar a forma do calcanhar. Em roupa, amplie as costuras, os punhos e os fechos.</p>
+            <p>Se a cor estiver pouco clara, peça uma fotografia com luz neutra. Para uma mala ou pulseira, peça uma foto com régua junto da peça.</p>
+          </article>
+          <article>
+            <h3>Compare o custo até à entrega</h3>
+            <p>Anote o preço na moeda do anúncio, os portes e as taxas aplicáveis ao destino. Ao comparar opções de envio internacional, confira se o cálculo usa o peso real ou o peso volumétrico.</p>
+            <p>Guarde o link de origem, a variante e a data da consulta. Verifique o prazo e o custo de devolução antes de avançar.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="referencias">
+        <p class="tag">03 / Referências visuais</p>
+        <h2 id="referencias">Quatro peças, quatro detalhes a observar</h2>
+        <p class="intro">Fotografias ilustrativas. A disponibilidade e as características de cada artigo devem ser confirmadas no respetivo anúncio.</p>
+        <div class="gallery">
+          <figure>
+            <img src="https://assets.christiandior.com/is/image/diorprod/113J631A0684C540_SBG_E01?$r4x5_raw$&amp;crop=0,0,4000,5000&amp;wid=355&amp;hei=444&amp;scale=0.2219&amp;bfc=on&amp;qlt=80" width="355" height="444" loading="lazy" decoding="async" alt="Camisola com capuz Dior Oblique azul-marinho">
+            <figcaption>Dior Oblique · Acabamento dos punhos</figcaption>
+          </figure>
+          <figure>
+            <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Boné Gucci em lona com padrão GG">
+            <figcaption>Gucci GG · Forma da pala</figcaption>
+          </figure>
+          <figure>
+            <img src="https://assets.hermes.com/is/image/hermesproduct/700001F%2001_front_wm_101?wid=360&amp;hei=480&amp;fit=fit&amp;$product_default_bg$" width="360" height="480" loading="lazy" decoding="async" alt="Pulseira Hermès Clic H com esmalte preto e fecho dourado">
+            <figcaption>Hermès Clic H · Fecho e largura</figcaption>
+          </figure>
+          <figure>
+            <img src="https://ca.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-keepall-bandouliere-45--M41418_PM1_Side%20view.jpg?wid=480&amp;hei=480" width="480" height="480" loading="lazy" decoding="async" alt="Mala de viagem Louis Vuitton Keepall 45 em lona Monogram">
+            <figcaption>Louis Vuitton Keepall 45 · Fixação das alças</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-labelledby="perguntas">
+        <p class="tag">04 / Respostas rápidas</p>
+        <h2 id="perguntas">Perguntas frequentes</h2>
+        <div class="faq">
+          <details open>
+            <summary>O que é uma VigorBuy spreadsheet?</summary>
+            <p>É uma lista de referências usada para organizar links de produtos, variantes, medidas e, quando disponíveis, fotos de controlo de qualidade. Este guia editorial encaminha as categorias para a HipoBuyFind.</p>
+          </details>
+          <details>
+            <summary>Que fotos de QC devo pedir para um par de ténis?</summary>
+            <p>Peça fotos dos dois pés juntos, do perfil, do calcanhar, da sola e da etiqueta. Para confirmar o ajuste, peça também a medida da palmilha em centímetros.</p>
+          </details>
+          <details>
+            <summary>As fotos de QC comprovam a autenticidade?</summary>
+            <p>Não. As fotos ajudam a avaliar o estado visível e a verificar a variante. Se a autenticidade for decisiva, procure um vendedor autorizado ou um serviço de autenticação independente.</p>
+          </details>
+          <details>
+            <summary>Como estimo o custo total de uma encomenda?</summary>
+            <p>Some o valor do artigo, o transporte interno e internacional, as taxas do serviço e os encargos aplicáveis no destino. Confirme a moeda, o peso usado no cálculo e as condições de devolução antes de pagar.</p>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="foot">
+    <div class="wrap">
+      <p>As marcas identificam as peças nas fotografias de referência.</p>
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+    </div>
+  </footer>
+</body>
+</html>
